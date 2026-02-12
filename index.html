@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adamson University Directory</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <h1>🏛️ Adamson University</h1>
+                <h2>Local Directory</h2>
+                <p class="subtitle">800 San Marcelino St., Ermita 1000, Manila | Main Line: 8524-2011</p>
+            </div>
+        </header>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search offices, departments, local numbers, buildings..." 
+                    autocomplete="off"
+                >
+                <button id="clearBtn" class="clear-btn">Clear</button>
+            </div>
+            <div class="search-info">
+                <span id="resultCount">Loading directory...</span>
+            </div>
+        </div>
+
+        <div class="filters">
+            <button class="filter-btn active" data-category="all">All</button>
+            <button class="filter-btn" data-category="Academic">Academic</button>
+            <button class="filter-btn" data-category="Administration">Administration</button>
+            <button class="filter-btn" data-category="Security">Security</button>
+            <button class="filter-btn" data-category="Health">Health</button>
+            <button class="filter-btn" data-category="Guidance">Guidance</button>
+            <button class="filter-btn" data-category="Finance">Finance</button>
+            <button class="filter-btn" data-category="Maintenance">Maintenance</button>
+        </div>
+
+        <div class="results-container">
+            <div id="resultsGrid" class="results-grid">
+                <!-- Results will be populated here -->
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Adamson University | Internal Directory System</p>
+        </footer>
+    </div>
+
+    <script src="data.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
